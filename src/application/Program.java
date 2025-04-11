@@ -40,9 +40,20 @@ public class Program {
 
 		// exemplo override e sobreposição
 
+		// com a taxa utilizando o withdraw no Account
 		Account acc1OR = new Account(1001, "Alex", 1000.0);
-		acc1OR.withdraw(200.0);
+		acc1OR.withdraw(200);
 		System.out.println(acc1OR.getBalance());
+
+		// sem a taxa utilizando o withdraw no SavingsAccount
+		Account acc2OR = new SavingsAccount(1002, "Maria", 1000.00, 0.01);
+		acc2OR.withdraw(200);
+		System.out.println(acc2OR.getBalance());
+
+		// com a taxa utilizando o withdraw no BusinessAccount
+		Account acc3OR = new BusinessAccount(1003, "Jorge", 1000.0, 500.0);
+		acc3OR.withdraw(200);
+		System.out.println(acc3OR.getBalance());
 
 	}
 

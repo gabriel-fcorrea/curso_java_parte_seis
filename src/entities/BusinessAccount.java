@@ -27,4 +27,10 @@ public class BusinessAccount extends Account { // extends (puxa todos os dados d
 		}
 	}
 
+	@Override
+	public void withdraw(double amount) {
+		super.withdraw(amount);
+		balance -= 2.0; // desconto adicional para contas business
+	}
+
 }
