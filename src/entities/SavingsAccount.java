@@ -25,4 +25,11 @@ public class SavingsAccount extends Account {
 		balance += balance * interestRate;
 	}
 
+	// sobrescrição:
+
+	@Override
+	public void withdraw(double amount) {
+		balance -= amount; // desta forma, é possível alterar determinado método com alterações específicas
+	}
+
 }

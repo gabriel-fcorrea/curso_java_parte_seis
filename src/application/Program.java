@@ -38,6 +38,12 @@ public class Program {
 			System.out.println("Update!");
 		}
 
+		// exemplo override e sobreposição
+
+		Account acc1OR = new Account(1001, "Alex", 1000.0);
+		acc1OR.withdraw(200.0);
+		System.out.println(acc1OR.getBalance());
+
 	}
 
 }
