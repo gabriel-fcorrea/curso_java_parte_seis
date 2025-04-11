@@ -22,8 +22,8 @@ public class Exercicio1 {
 			System.out.print("Outsourced (y/n)? ");
 			char option = sc.next().charAt(0);
 			System.out.print("Name: ");
+			sc.nextLine();
 			String name = sc.nextLine();
-			sc.next();
 			System.out.print("Hours: ");
 			int hours = sc.nextInt();
 			System.out.print("Value per hour: ");
