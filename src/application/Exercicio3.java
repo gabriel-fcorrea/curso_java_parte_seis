@@ -41,7 +41,7 @@ public class Exercicio3 {
 		System.out.println("\nShape Areas:");
 
 		for (Shape obj : list) {
-			System.out.println(obj.Area());
+			System.out.println(String.format("%.2f", obj.Area()));
 		}
 
 		sc.close();
